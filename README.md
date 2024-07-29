@@ -1,27 +1,74 @@
-# AngularProject
+# Product Management Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+This project is a full-stack web application that allows users to add, delete, and edit products. It consists of a frontend built with Angular and SCSS, and a backend built with Express.js.
 
-## Development server
+## Project Structure (monorepo)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project is divided into two main parts:
 
-## Code scaffolding
+- `api`: The backend server, built with Express.js.
+- `web`: The frontend client, built with Angular and SCSS.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Add Products**: Users can add new products with various details.
+- **Edit Products**: Users can edit existing product details.
+- **Delete Products**: Users can delete products from the list.
+- **View Products**: Users can view all products in a list.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run this project locally, you need to have the following installed:
 
-## Running end-to-end tests
+- Node.js
+- Angular CLI
+- Git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Installation
 
-## Further help
+1. Install dependencies for the backend:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+cd api
+<br>
+npm install
+
+2. Install dependencies for the frontend:
+
+cd web
+<br>
+npm install
+
+## Running
+
+1. Backend (API)
+
+Navigate to the api directory:
+<br>
+cd api
+
+Start the backend server:
+<br>
+node server.js
+<br>
+
+The backend server will run on http://localhost:3000.
+
+2. Frontend (Web)
+
+Navigate to the web directory:
+<br>
+cd web
+
+Start the frontend server:
+<br>
+ng serve
+<br>
+
+The frontend server will run on http://localhost:4200.
+
+## Acknowledgements
+
+<br>
+This project is based on a tutorial by Code Deck (https://youtu.be/f7BJFTEbc10). Special thanks to the author for their comprehensive guide and valuable insights.
